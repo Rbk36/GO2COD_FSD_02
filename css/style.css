@@ -1,0 +1,14 @@
+.nav-link {
+    padding:10px;
+    background-color: rgba(0, 255, 255, 0.282);
+    text-align: end;
+}
+a {
+    color:rgb(2, 14, 10);
+    text-decoration: none;
+    padding:20px;
+}
+img {
+    width: 60px;
+    display: flex;
+}
