@@ -2,6 +2,11 @@
     padding:10px;
     background-color: rgba(0, 255, 255, 0.282);
     text-align: end;
+    position: sticky;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    top:0;
+    left:0;
+
 }
 a {
     color:rgb(2, 14, 10);
@@ -17,16 +22,53 @@ img {
 }
 /*Home page*/
 #page1 {
-   background-image: url("C:/Users/hp/Pictures/images/img1.jpg"); 
+   background-image: url("C:/Users/hp/Pictures/images/pic.png"); 
    height:50rem;
    width:90rem;
    background-size: cover;
    background-position: top 25% right 0;
    padding:20px;
-   background-color: aqua;
-
-   
+    text-align: end;
+   background-repeat: no-repeat;
 }
 #page1 h4{
-    color: aquamarine;
+    color:blueviolet;
+    font-size:1.2rem;
+
+}
+#page1 h1{
+    font-size:4.2rem;
+    
+
+}
+#page1 p{
+color: rgb(221, 114, 110);
+}
+#page1 button{
+    background-color: rgb(202,10,101);
+    cursor: pointer;
+    font-weight: 700;
+}
+#feat-box{
+    display: flex;
+    justify-content:flex-start;
+    gap:10px;
+   
+}
+#feat-box h4{
+    background-color: rgb(221, 114, 110);
+    display: inline-block;
+    padding:10px;
+}
+#feat-box img {
+    width: 100px; 
+    height: auto;
+    padding:10px;
+    margin: 5px;;
+
+}
+#feat-box div {
+    border: solid 3px aquamarine;
+    padding:10px;
+    margin:5px;
 }
