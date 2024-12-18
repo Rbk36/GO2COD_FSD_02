@@ -1,74 +1,145 @@
+/* Navigation Bar */
 .nav-link {
-    padding:10px;
-    background-color: rgba(0, 255, 255, 0.282);
+    padding: 10px 20px;
+    background-color: rgba(0, 255, 255, 0.9);
     text-align: end;
     position: sticky;
+    top: 0;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-    top:0;
-    left:0;
+    z-index: 10;
+}
 
-}
-a {
-    color:rgb(2, 14, 10);
-    text-decoration: none;
-    padding:20px;
-}
-.active{
-    color:aqua;
-}
-img {
+.nav-link img {
     width: 60px;
-    display: flex;
+    vertical-align: middle;
 }
-/*Home page*/
+
+.nav-link a {
+    color: #020e0a;
+    text-decoration: none;
+    padding: 15px 20px;
+    font-size: 16px;
+}
+
+.nav-link a:hover {
+    color: teal;
+}
+
+.nav-link .active {
+    color: aqua;
+    font-weight: bold;
+    border-bottom: 2px solid aqua;
+}
+
+/* Hero Section */
 #page1 {
-   background-image: url("C:/Users/hp/Pictures/images/pic.png"); 
-   height:50rem;
-   width:90rem;
-   background-size: cover;
-   background-position: top 25% right 0;
-   padding:20px;
-    text-align: end;
-   background-repeat: no-repeat;
-}
-#page1 h4{
-    color:blueviolet;
-    font-size:1.2rem;
-
-}
-#page1 h1{
-    font-size:4.2rem;
-    
-
-}
-#page1 p{
-color: rgb(221, 114, 110);
-}
-#page1 button{
-    background-color: rgb(202,10,101);
-    cursor: pointer;
-    font-weight: 700;
-}
-#feat-box{
+    background-image: url('C:/Users/hp/Desktop/Go2Cod Internship/Online Store/images/img1.jpg');
+    height: 120vh;
+    background-size: cover;
+    background-position: center;
+    text-align: right;
     display: flex;
-    justify-content:flex-start;
-    gap:10px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-end;
+    color: white;
+    padding: 20px;
+}
+
+#page1 h4, #page1 h2, #page1 p {
+    margin: 0 0 10px;
+}
+
+#page1 button {
+    background-color: rgb(202, 10, 101);
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-weight: bold;
+    font-size: 1rem;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+#page1 button:hover {
+    background-color: rgb(255, 50, 150);
+}
+
+/* Features Section */
+#feat-box {
+    display: flex;
+    justify-content:center;
+    padding: 20px;
    
 }
-#feat-box h4{
-    background-color: rgb(221, 114, 110);
-    display: inline-block;
-    padding:10px;
-}
-#feat-box img {
-    width: 100px; 
-    height: auto;
-    padding:10px;
-    margin: 5px;;
 
-}
 #feat-box div {
-    border: solid 3px aquamarine;
-    padding:10px;
-    margin:5px;
+    text-align: center;
+    padding: 10px;
+    border-radius: 8px;
+    background-color: #fff;
+    transition: all 0.3s ease-in-out;
+}
+
+#feat-box div:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+#feat-box img {
+    border-radius: 50%;
+    width: 200px;
+    
+}
+
+/* Product Section */
+#product {
+    padding: 20px;
+    background-color: white;
+    text-align: center;
+}
+
+.product-item {
+    border: 1px solid #ddd;
+    padding: 15px;
+    width: 220px;
+    border-radius: 8px;
+    margin: 15px;
+    display: inline-block;
+    transition: all 0.3s ease-in-out;
+}
+
+.product-item:hover {
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    transform: translateY(-5px);
+}
+
+.product-item img {
+    width: 150px;
+    border-radius: 5px;
+}
+
+.product-item h4 {
+    font-size: 1.2rem;
+    color: #333;
+    margin: 10px 0 5px;
+}
+
+.product-item p {
+    font-size: 0.9rem;
+    color: #777;
+}
+
+.product-item button {
+    background-color: rgb(202, 10, 101);
+    color: white;
+    border: none;
+    padding: 8px 15px;
+    border-radius: 5px;
+    font-size: 0.9rem;
+    cursor: pointer;
+}
+
+.product-item button:hover {
+    background-color: rgb(255, 50, 150);
 }
