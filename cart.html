@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style2.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"/>
+    <title>Your Cart | Online Store</title>
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="nav-link">
+        <img src="images/logo.png" alt="Logo">
+        <a href="index.html">Home</a>
+        <a href="store.html">Store</a>
+        <a href="contact.html">Contact</a>
+        <a class="active" href="cart.html"><i class="fa-solid fa-cart-shopping"></i> Cart</a>
+    </nav>
+
+    <!-- Cart Section -->
+    <section id="cart">
+        <h2>Your Cart</h2>
+
+        <!-- Cart Items List -->
+        <ul id="cart-items">
+            <!-- Cart items will dynamically populate here -->
+        </ul>
+
+        <!-- Total Price -->
+        <p id="total">Total: $0</p>
+
+        <!-- Clear Cart Button -->
+        <button onclick="clearCart()">Clear Cart</button>
+
+        <!-- Checkout Button -->
+        <button onclick="location.href='checkout.html'">Proceed to Checkout</button>
+    </section>
+
+    <!-- Footer Section -->
+    <footer>
+        <p>&copy; 2024 Online Store. All rights reserved.</p>
+    </footer>
+
+    <script>
+        const cart = [];
+
+        // Add items to the cart for demonstration purposes
+        // You would normally add items through the "Add to Cart" button in the store page
+        function addToCart(product, price) {
+            cart.push({ product, price });
+            renderCart();
+        }
+
+        function removeFromCart(index) {
+            cart.splice(index, 1);
+            renderCart();
+        }
+
+        function clearCart() {
+            cart.length = 0;
+            renderCart();
+        }
+
+        function renderCart() {
+            const cartItems = document.getElementById('cart-items');
+            const total = document.getElementById('total');
+            cartItems.innerHTML = ''; // Clear current cart items
+
+            let totalAmount = 0;
+            cart.forEach((item, index) => {
+                totalAmount += item.price;
+                const li = document.createElement('li');
+                li.innerHTML = `${item.product} - $${item.price} <button onclick="removeFromCart(${index})">Remove</button>`;
+                cartItems.appendChild(li);
+            });
+
+            total.textContent = `Total: $${totalAmount}`;
+        }
+
+        // Add sample products to the cart for testing
+        // You can remove these lines when the user adds items through the store page
+        addToCart("Adidas Summer T-shirt", 30);
+        addToCart("Nike Running Shoes", 120);
+        addToCart("Gucci Leather Backpack", 250);
+    </script>
+
+</body>
+</html>
