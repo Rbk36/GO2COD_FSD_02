@@ -1,78 +1,119 @@
-<!DOCTYPE html>
+<!DOCTYPE html> 
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"/>
-    <title>Home-page</title>
+    <title>Online Store</title>
 </head>
 <body>
+    <!-- Navigation -->
     <nav class="nav-link">
-
-        <img src="C:/Users/hp/Pictures/Images/logo.png" alt="image is here">
+        <img src="images/logo.png" alt="Logo">
         <a class="active" href="index.html">Home</a>
         <a href="store.html">Store</a>
         <a href="contact.html">Contact</a>
         <a href="about.html">About</a>
-        <a href="cart.html"><i class="fa-solid fa-cart-shopping"></i></a>
+        <a href="cart.html"><i class="fa-solid fa-cart-shopping"></i> Cart</a>
     </nav>
-    <br>
 
+    <!-- Hero Section -->
     <section id="page1">
-        <h4>Shopping with discounts</h4>
-        <h1>Super deals</h1>
+        <h4>Shopping with Discounts</h4>
+        <h2>Super Deals</h2>
         <p>Save more using our 50% discounts</p>
-        <button>Shop now</button>
+        <button onclick="location.href='store.html'">Shop Now</button>
     </section>
-    <br>
-    <br>
+
+    <!-- Features Section -->
     <section id="feat-box">
         <div> 
-            <img src="C:/Users/hp/Pictures/Images/f1.png" alt="image is here">
-        
-            <h4>Free shipping</h4>
+            <img src="images/f1.png" alt="Free Shipping">
+            <h4>Free Shipping</h4>
         </div>
         <div> 
-            <img src="C:/Users/hp/Pictures/Images/f2.png" alt="image is here">
-        
+            <img src="images/f2.png" alt="Order Online">
             <h4>Order Online</h4>
         </div>
-        
         <div> 
-            <img src="C:/Users/hp/Pictures/Images/f3.png" alt="image is here">
-        
+            <img src="images/f3.png" alt="Save Money">
             <h4>Save Money</h4>
         </div>
     </section>
 
-   
-<section id="product1">
-    <h2>Featured products</h2>
-    <p>New collection with modern design</p>
-        <div class="pro-container">
-            <div class="pro">
-                <img src="C:/Users/hp/Pictures/Images/f1.jpg" alt="Image is here">
-                <div class="desc">
-                    <span>Addidas</span>
-                    <h5>Cartoon Astronant T-shirt</h5>
-                    <div class="star">
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-
-                    </div>
-                    <h4>$60</h4>
+    <!-- Products Section -->
+    <section id="product">
+        <h2>Our Products</h2>
+        <div class="product-grid">
+            <!-- Product 1 -->
+            <div class="product-item">
+                <img src="images/t1.jpg" alt="Adidas T-shirt">
+                <div class="description">
+                    <h4>Adidas</h4>
+                    <p>Summer T-shirt</p>
                 </div>
-                <a href="#"><i class="fa-solid fa-cart-shopping"></i></a>
+                <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                </div>
+                <h4>$30</h4>
+                <button><i class="fa-solid fa-cart-shopping"></i> Add to Cart</button>
             </div>
-            <div class="pro">
-                <img src="C:/Users/hp/Pictures/Images/f2.jpg" alt="Image is here">
+
+            <!-- Product 2 -->
+            <div class="product-item">
+                <img src="images/s1.jpg" alt="Nike Shoes">
+                <div class="description">
+                    <h4>Nike</h4>
+                    <p>Running Shoes</p>
+                </div>
+                <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                </div>
+                <h4>$120</h4>
+                <button><i class="fa-solid fa-cart-shopping"></i> Add to Cart</button>
+            </div>
+
+            <!-- Product 3 -->
+            <div class="product-item">
+                <img src="images/b1.jpg" alt="Leather Bag">
+                <div class="description">
+                    <h4>Gucci</h4>
+                    <p>Leather Backpack</p>
+                </div>
+                <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                </div>
+                <h4>$250</h4>
+                <button><i class="fa-solid fa-cart-shopping"></i> Add to Cart</button>
+            </div>
+            <!-- Product 4 -->
+
+            <div class="product-item">
+                <img src="images/ws1.jpg" alt="Leather Bag">
+                <div class="description">
+                    <h4>Zara</h4>
+                    <p>Ladies shoes</p>
+                </div>
+                <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                </div>
+                <h4>$300</h4>
+                <button><i class="fa-solid fa-cart-shopping"></i> Add to Cart</button>
             </div>
         </div>
-
-</section>
+    </section>
 </body>
 </html>
